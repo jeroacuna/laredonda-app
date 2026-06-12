@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Redonda - Alquila Tu Cancha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="atc-container">
+        <header class="venue-header">
+            <div class="venue-info">
+                <h1>La Redonda</h1>
+                <p class="location">📍 Paraná, Entre Ríos</p>
+                <p class="description">Fútbol 5 • Hockey • Cumpleaños | Abierto de 14:00 a 00:00 hs</p>
+            </div>
+        </header>
+
+        <section class="days-selector-wrapper">
+            <h3>Seleccioná el día:</h3>
+            <div class="days-container" id="days-bar">
+                </div>
+        </section>
+
+        <section class="venues-list" id="canchas-container">
+            </section>
+
+        <footer class="venue-footer">
+            <h3>Contacto y Ubicación</h3>
+            <div class="footer-links">
+                <a href="https://wa.me/3434468191" target="_blank" class="footer-btn whatsapp">💬 WhatsApp</a>
+                <a href="https://www.instagram.com/laredonda.futbol5?igsh=b3NscHp3Mjl2MGp1" target="_blank" class="footer-btn instagram">📸 Instagram</a>
+                <a href="https://maps.app.goo.gl/ZTWtpzqEPDV3v1an7" target="_blank" class="footer-btn maps">📍 Cómo llegar</a>
+            </div>
+        </footer>
+
+        <div class="modal" id="modal-reserva">
+            <div class="modal-content">
+                <h2>Confirmar Turno</h2>
+                <p id="modal-detalles-turno"></p>
+                <form id="form-confirmar">
+                    <input type="text" id="nombre-cliente" placeholder="Tu nombre y apellido" required>
+                    <input type="tel" id="tel-cliente" placeholder="WhatsApp (Ej: 343...)" required>
+                    <div class="modal-actions">
+                        <button type="button" class="btn-secondary" id="btn-cerrar-modal">Cancelar</button>
+                        <button type="submit" class="btn-primary">Reservar por WhatsApp</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
